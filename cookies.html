@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookies Policy · MuttCulture</title>
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f5f0;
+      color: #1e1e1e;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ----- HEADER / NAVIGATION ----- */
+    header {
+      background: #2c3e2f;
+      padding: 1.2rem 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #f0eae1;
+    }
+    .logo i {
+      color: #bcd9b0;
+      margin-right: 6px;
+    }
+    .logo span {
+      color: #d4c9b5;
+      font-weight: 300;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      color: #e7e1d6;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.05rem;
+      transition: 0.2s ease;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+    }
+    nav ul li a:hover {
+      color: #ffffff;
+      border-bottom-color: #bcd9b0;
+    }
+
+    /* ----- MAIN CONTENT ----- */
+    main {
+      flex: 1;
+      padding: 3rem 0 4rem;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .page-header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1f3b2a;
+    }
+    .page-header h1 i {
+      color: #5b7f5a;
+      margin-right: 12px;
+    }
+    .page-header p {
+      font-size: 1.2rem;
+      color: #3d4f3d;
+      max-width: 700px;
+      margin: 0.5rem auto 0;
+    }
+
+    .cookies-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .cookies-card {
+      background: #ffffffd9;
+      backdrop-filter: blur(2px);
+      padding: 2.5rem 3rem;
+      border-radius: 40px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.02);
+      border: 1px solid #ebe3d7;
+      transition: all 0.2s;
+    }
+    .cookies-card h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #1e3a24;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .cookies-card h2 i {
+      color: #4d7350;
+      font-size: 1.8rem;
+    }
+    .cookies-card h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #1f3b2a;
+      margin: 1.8rem 0 0.8rem 0;
+    }
+    .cookies-card p {
+      margin-bottom: 1.2rem;
+      color: #2d3d2d;
+      font-size: 1.05rem;
+    }
+    .cookies-card ul {
+      margin: 1rem 0 1.5rem 2rem;
+      color: #2b3f2b;
+    }
+    .cookies-card ul li {
+      margin-bottom: 0.6rem;
+      list-style-type: '🍪 ';
+      padding-left: 0.5rem;
+    }
+    .cookies-card ul li strong {
+      color: #1f4527;
+    }
+
+    .highlight-box {
+      background: #eaf3e6;
+      padding: 1.8rem 2.2rem;
+      border-radius: 30px;
+      margin: 1.5rem 0;
+      border-left: 6px solid #4b6b48;
+    }
+    .highlight-box p {
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+    }
+
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .cookie-table th {
+      background: #dce8d6;
+      padding: 0.8rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      color: #1f3b2a;
+      border-bottom: 2px solid #4b6b48;
+    }
+    .cookie-table td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #e0dcd2;
+    }
+    .cookie-table tr:hover {
+      background: #f4f7f0;
+    }
+
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0 0.5rem;
+    }
+    .badge-list span {
+      background: #eef5ea;
+      padding: 0.4rem 1.2rem;
+      border-radius: 60px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #1f4527;
+      border: 1px solid #c6d9bc;
+    }
+
+    .effective-date {
+      background: #f0f5ec;
+      padding: 0.8rem 1.8rem;
+      border-radius: 40px;
+      display: inline-block;
+      font-weight: 600;
+      color: #1f4527;
+      margin-top: 0.5rem;
+    }
+
+    /* ----- COOKIE CONSENT DIALOGUE BOX (bottom) ----- */
+    .cookie-consent {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #1f2b1f;
+      color: #e7e1d6;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 -8px 30px rgba(0,0,0,0.25);
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      border-top: 4px solid #4b6b48;
+      transition: transform 0.4s ease;
+    }
+    .cookie-consent.hidden {
+      transform: translateY(100%);
+      pointer-events: none;
+    }
+    .cookie-consent .cookie-text {
+      flex: 2;
+      min-width: 220px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .cookie-consent .cookie-text a {
+      color: #bcd9b0;
+      text-decoration: underline;
+    }
+    .cookie-consent .cookie-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .cookie-consent .cookie-buttons button {
+      padding: 0.7rem 1.8rem;
+      border: none;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-accept {
+      background: #4b6b48;
+      color: #fff;
+    }
+    .btn-accept:hover {
+      background: #5d8260;
+      transform: scale(1.02);
+    }
+    .btn-decline {
+      background: #5a4f44;
+      color: #e7e1d6;
+    }
+    .btn-decline:hover {
+      background: #6f6255;
+      transform: scale(1.02);
+    }
+
+    /* ----- FOOTER with address & phone ----- */
+    footer {
+      background: #1f2b1f;
+      color: #dad3c7;
+      padding: 2.8rem 0;
+      margin-top: 3rem;
+      border-top: 4px solid #4b6b48;
+    }
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+    .footer-address {
+      font-style: normal;
+      line-height: 1.8;
+    }
+    .footer-address i {
+      width: 1.8rem;
+      color: #b8d0ae;
+    }
+    .footer-phone i {
+      width: 1.8rem;
+      color: #b8d0ae;
+    }
+    .footer-copy {
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 700px) {
+      .nav-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      nav ul {
+        justify-content: center;
+        gap: 1rem;
+      }
+      .page-header h1 {
+        font-size: 2.4rem;
+      }
+      .cookies-card {
+        padding: 1.8rem;
+      }
+      .cookie-consent {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.2rem;
+      }
+      .cookie-consent .cookie-buttons {
+        justify-content: center;
+      }
+      .cookie-table {
+        font-size: 0.8rem;
+      }
+      .cookie-table th, .cookie-table td {
+        padding: 0.5rem 0.6rem;
+      }
+    }
+    @media (max-width: 460px) {
+      .cookies-card {
+        padding: 1.2rem;
+      }
+      .cookie-consent .cookie-buttons button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo"><i class="fas fa-leaf"></i>Mutt<span>Culture</span></div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1><i class="fas fa-cookie-bite"></i> Cookies Policy</h1>
+        <p>How we use cookies and similar technologies to enhance your experience on MuttCulture.</p>
+        <div class="effective-date">Last Updated: June 28, 2026</div>
+      </div>
+
+      <div class="cookies-content">
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-info-circle"></i> What are cookies?</h2>
+          <p>Cookies are small text files that are placed on your computer, smartphone, or other device when you visit a website. They are widely used to make websites work more efficiently, enhance user experience, and provide valuable information to website owners. Cookies can be "session cookies" (which are deleted when you close your browser) or "persistent cookies" (which remain on your device for a set period or until you delete them).</p>
+          <p>At MuttCulture, we use cookies to understand how you interact with our website, remember your preferences, and deliver personalized content. We also use cookies for analytics, security, and marketing purposes. This policy explains the types of cookies we use, why we use them, and how you can manage your preferences.</p>
+          <div class="highlight-box">
+            <p><i class="fas fa-shield-alt" style="color: #2b5e3a; margin-right: 8px;"></i> We respect your privacy. You have the right to accept or decline cookies, and you can change your preferences at any time.</p>
+          </div>
+        </div>
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-list"></i> Types of cookies we use</h2>
+          <p>We use the following categories of cookies on our website:</p>
+          <ul>
+            <li><strong>Essential cookies:</strong> These are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility. You cannot opt out of these cookies as they are required for the website to operate.</li>
+            <li><strong>Preference cookies:</strong> These cookies allow the website to remember choices you make (such as your language preference, region, or login details) to provide enhanced, more personalized features.</li>
+            <li><strong>Analytics cookies:</strong> These cookies collect information about how visitors use our website, such as which pages are visited most often and how users navigate the site. This data helps us improve our website and user experience. We use Google Analytics and other tools for this purpose.</li>
+            <li><strong>Marketing cookies:</strong> These cookies are used to deliver relevant advertisements to you based on your interests and browsing behavior. They may also be used to limit the number of times you see an ad and measure the effectiveness of marketing campaigns.</li>
+          </ul>
+        </div>
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-table"></i> Detailed cookie list</h2>
+          <p>The table below provides specific information about the cookies we use on our website:</p>
+          <table class="cookie-table">
+            <thead>
+              <tr>
+                <th>Cookie Name</th>
+                <th>Type</th>
+                <th>Purpose</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>mutt_session</strong></td>
+                <td>Essential</td>
+                <td>Maintains user session and login state</td>
+                <td>Session</td>
+              </tr>
+              <tr>
+                <td><strong>mutt_preferences</strong></td>
+                <td>Preference</td>
+                <td>Stores user preferences (language, region)</td>
+                <td>1 year</td>
+              </tr>
+              <tr>
+                <td><strong>_ga</strong></td>
+                <td>Analytics</td>
+                <td>Google Analytics: distinguishes unique users</td>
+                <td>2 years</td>
+              </tr>
+              <tr>
+                <td><strong>_gid</strong></td>
+                <td>Analytics</td>
+                <td>Google Analytics: stores session information</td>
+                <td>24 hours</td>
+              </tr>
+              <tr>
+                <td><strong>_fbp</strong></td>
+                <td>Marketing</td>
+                <td>Facebook Pixel: tracks conversions and retargeting</td>
+                <td>3 months</td>
+              </tr>
+              <tr>
+                <td><strong>mutt_cart</strong></td>
+                <td>Essential</td>
+                <td>Stores shopping cart information</td>
+                <td>30 days</td>
+              </tr>
+              <tr>
+                <td><strong>mutt_consent</strong></td>
+                <td>Preference</td>
+                <td>Stores cookie consent preferences</td>
+                <td>1 year</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Please note that third-party services (such as Google, Facebook, and payment processors) may also set cookies on our website. We do not control these cookies, and we encourage you to review the privacy policies of these third-party providers.</p>
+        </div>
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-cog"></i> Why we use cookies</h2>
+          <p>Cookies enable us to provide you with a seamless and personalized experience on MuttCulture. Specifically, we use cookies to:</p>
+          <ul>
+            <li><strong>Improve website performance:</strong> Analytics cookies help us understand how users interact with our site, allowing us to optimize content and functionality.</li>
+            <li><strong>Remember your preferences:</strong> Preference cookies save your settings so you don't have to re-enter them each time you visit.</li>
+            <li><strong>Provide relevant content:</strong> Marketing cookies allow us to show you products and services that may interest you based on your browsing history.</li>
+            <li><strong>Enhance security:</strong> Essential cookies help us protect your account and prevent fraudulent activity.</li>
+            <li><strong>Facilitate transactions:</strong> Session cookies are necessary for processing orders and maintaining your shopping cart.</li>
+          </ul>
+          <div class="stat-grid" style="display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:space-around; background:#dce8d6; padding:1.8rem 1rem; border-radius:60px; margin:1.8rem 0;">
+            <div><span class="number" style="font-size:2.2rem; font-weight:700; color:#1f4527;">7.2M</span> <span class="label" style="font-weight:500; color:#3a553a;">cookies managed daily</span></div>
+            <div><span class="number" style="font-size:2.2rem; font-weight:700; color:#1f4527;">99.8%</span> <span class="label" style="font-weight:500; color:#3a553a;">cookie compliance rate</span></div>
+            <div><span class="number" style="font-size:2.2rem; font-weight:700; color:#1f4527;">4ms</span> <span class="label" style="font-weight:500; color:#3a553a;">average cookie response time</span></div>
+          </div>
+        </div>
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-sliders-h"></i> Managing your cookie preferences</h2>
+          <p>You have the right to control how cookies are used on your device. Here are the ways you can manage your cookie preferences:</p>
+          <ul>
+            <li><strong>Cookie consent banner:</strong> When you first visit our website, you will see a cookie consent banner that allows you to accept or decline non-essential cookies. You can change your preferences at any time by clicking the "Cookie Settings" link in the footer or by clearing your browser cookies.</li>
+            <li><strong>Browser settings:</strong> Most web browsers allow you to manage cookie settings through their preferences menu. You can block or delete cookies, or set your browser to notify you when a cookie is being placed. Please note that blocking essential cookies may affect the functionality of our website.</li>
+            <li><strong>Third-party opt-out tools:</strong> You can opt out of interest-based advertising from third-party providers through the Network Advertising Initiative (<a href="https://optout.networkadvertising.org" target="_blank" style="color:#2b5e3a;">optout.networkadvertising.org</a>) or the Digital Advertising Alliance (<a href="https://optout.aboutads.info" target="_blank" style="color:#2b5e3a;">optout.aboutads.info</a>).</li>
+          </ul>
+          <div class="highlight-box">
+            <p><i class="fas fa-check-circle" style="color: #2b5e3a; margin-right: 8px;"></i> We respect your choices. If you decline cookies, we will only use essential cookies necessary for the website to function.</p>
+          </div>
+        </div>
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-clock"></i> Cookie retention periods</h2>
+          <p>The retention period for cookies varies depending on their purpose. Session cookies are deleted when you close your browser. Persistent cookies remain on your device for a fixed period, ranging from a few hours to several years. The specific retention periods for our cookies are listed in the table above. We periodically review our cookie usage to ensure that we retain data only as long as necessary.</p>
+          <p>You can manually delete cookies from your browser at any time. Please refer to your browser's help documentation for instructions on how to clear cookies and other browsing data.</p>
+        </div>
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-shield-alt"></i> Third-party cookies</h2>
+          <p>We work with trusted third-party partners who may set cookies on our website. These partners include:</p>
+          <ul>
+            <li><strong>Google:</strong> We use Google Analytics to understand website traffic and user behavior. Google may also use cookies for advertising purposes. You can learn more about Google's privacy practices at <a href="https://policies.google.com/privacy" target="_blank" style="color:#2b5e3a;">policies.google.com/privacy</a>.</li>
+            <li><strong>Facebook (Meta):</strong> We use Facebook Pixel to track conversions and deliver targeted advertisements. You can learn more at <a href="https://www.facebook.com/privacy/policy" target="_blank" style="color:#2b5e3a;">facebook.com/privacy</a>.</li>
+            <li><strong>Payment processors:</strong> Our payment gateways (Stripe, PayPal) may set cookies to facilitate secure transactions. Their privacy policies apply.</li>
+            <li><strong>Social media platforms:</strong> If you share our content on social media, those platforms may set cookies on your device. We do not control these cookies.</li>
+          </ul>
+          <p>We encourage you to review the privacy and cookie policies of these third-party providers to understand how they use your data.</p>
+        </div>
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-gavel"></i> Changes to this policy</h2>
+          <p>We may update this Cookies Policy from time to time to reflect changes in our practices, legal obligations, or the cookies we use. We will post the updated policy on this page with a revised "Last Updated" date. For significant changes, we may notify you via email or through a prominent notice on our website. We encourage you to review this policy periodically to stay informed about how we use cookies.</p>
+          <p><strong>Last Updated:</strong> June 28, 2026</p>
+          <div class="badge-list">
+            <span><i class="fas fa-check-circle"></i> GDPR compliant</span>
+            <span><i class="fas fa-check-circle"></i> CCPA compliant</span>
+            <span><i class="fas fa-check-circle"></i> ePrivacy compliant</span>
+          </div>
+        </div>
+
+        <div class="cookies-card">
+          <h2><i class="fas fa-phone-alt"></i> Contact us</h2>
+          <p>If you have any questions, concerns, or feedback regarding this Cookies Policy or how we handle your data, please contact us:</p>
+          <p><i class="fas fa-envelope" style="color: #4d7350; width: 2rem;"></i> <strong>privacy@muttculture.com</strong></p>
+          <p><i class="fas fa-map-pin" style="color: #4d7350; width: 2rem;"></i> 217 Green Valley Rd, Suite B, Asheville, NC 28806, USA</p>
+          <p><i class="fas fa-phone-alt" style="color: #4d7350; width: 2rem;"></i> +1 (800) 555‑MUTT (6888)</p>
+          <p>Our privacy team is available Monday–Friday, 9 AM – 5 PM EST. We aim to respond to all inquiries within 48 hours.</p>
+          <div class="highlight-box">
+            <p><i class="fas fa-heart" style="color: #2b5e3a;"></i> Thank you for trusting MuttCulture. We are committed to transparency and giving you control over your digital experience.</p>
+          </div>
+        </div>
+
+      </div> <!-- end cookies-content -->
+    </div>
+  </main>
+
+  <!-- COOKIE CONSENT DIALOGUE BOX -->
+  <div id="cookieConsent" class="cookie-consent">
+    <div class="cookie-text">
+      <i class="fas fa-cookie" style="color: #bcd9b0; margin-right: 10px;"></i>
+      We use cookies to enhance your experience on MuttCulture. By clicking "Accept", you consent to the use of all cookies. You can also decline non-essential cookies. Learn more in our <a href="cookies.html">Cookies Policy</a>.
+    </div>
+    <div class="cookie-buttons">
+      <button class="btn-decline" id="declineBtn">Decline</button>
+      <button class="btn-accept" id="acceptBtn">Accept</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-address">
+        <i class="fas fa-map-pin"></i> 217 Green Valley Rd, Suite B, Asheville, NC 28806<br />
+        <i class="fas fa-envelope"></i> hello@muttculture.com
+      </div>
+      <div class="footer-phone">
+        <i class="fas fa-phone-alt"></i> +1 (800) 555‑MUTT (6888)
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 MuttCulture · Odor Control
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Cookie consent dialogue box logic
+    document.addEventListener('DOMContentLoaded', function() {
+      const consentBox = document.getElementById('cookieConsent');
+      const acceptBtn = document.getElementById('acceptBtn');
+      const declineBtn = document.getElementById('declineBtn');
+
+      // Check if user has already made a choice (using localStorage for demo)
+      const consentGiven = localStorage.getItem('mutt_cookie_consent');
+
+      if (consentGiven) {
+        consentBox.classList.add('hidden');
+      }
+
+      function handleConsent(choice) {
+        localStorage.setItem('mutt_cookie_consent', choice);
+        consentBox.classList.add('hidden');
+        // You can add additional logic here to enable/disable cookies
+        if (choice === 'accepted') {
+          console.log('Cookies accepted — analytics and marketing cookies enabled.');
+          // In a real implementation, you would load third-party scripts here
+        } else {
+          console.log('Cookies declined — only essential cookies will be used.');
+          // In a real implementation, you would disable non-essential cookies
+        }
+      }
+
+      acceptBtn.addEventListener('click', function() {
+        handleConsent('accepted');
+      });
+
+      declineBtn.addEventListener('click', function() {
+        handleConsent('declined');
+      });
+
+      // Optional: if user clicks anywhere outside the box, it stays visible until they choose
+      // We keep it persistent to ensure explicit consent.
+    });
+  </script>
+</body>
+</html>
